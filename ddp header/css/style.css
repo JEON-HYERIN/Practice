@@ -1,0 +1,154 @@
+:root {
+  /* color */
+  --black-color:#000;
+  --background-color:#808080;
+  --white-color:#fff;
+  /* size */
+  --font-small:12px;
+  --font-medium:14px;
+  /* spacing */
+  --space-small:16px;
+  --space-large:40px;
+}
+
+
+body, div, header, nav, h1 ,h2, ul, li {
+  margin:0;
+  padding:0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color:var(--black-color);
+}
+
+ul, li {
+  list-style: none;
+}
+
+.hide-class {
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+header {
+  background-color: var(--white-color);
+  padding:calc(var(--space-large) *2);
+  position:relative;
+  margin:0 auto;
+  padding-top:var(--space-large);
+}
+
+.header__logo {
+  float:left;
+}
+
+nav {
+  /* float: right; */
+}
+
+.header__menu {
+  float: right;
+  margin-top:var(--space-large);
+  padding-bottom: var(--space-small);
+}
+
+.header__menu li {
+  float: left;
+  padding-right: var(--space-large);  
+  font-size: var(--font-medium);
+  
+}
+
+.header__sign {
+  clear: both;
+  position: absolute;
+  top: 0;
+  right: 150px;
+  margin-top:calc(var(--space-small)*2);
+}
+
+.header__sign li {
+  float: left;
+  padding-right: var(--space-large);  
+  font-size: var(--font-small);
+}
+
+.header__sign li:nth-child(3) {
+  padding-right: var(--space-small);
+}
+
+.toogleBtn {
+  position: absolute;
+  top:10px;
+  right: 30px;
+  font-size: calc(var(--font-small)*2);
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  header {
+    padding:var(--space-small);
+  }
+
+  .header__logo {
+    float: none;
+    position: absolute;
+    top:10px;
+    left:20px;
+  }
+ 
+  .header__menu {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: var(--space-large);
+    
+  }
+
+  .header__menu li {
+    float: left;
+    margin-top: var(--space-small);
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__menu li a {
+    display: block;
+  }
+
+  .header__sign {
+    top:0;
+    right: 0;
+    margin-top:var(--space-small);
+    display: none;
+  }
+
+  .toogleBtn {
+    display: block;
+  }
+
+  .header__sign.active {
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+  }
+
+  .header__sign.active li{
+    
+    padding-bottom: 10px;
+  }
+}
