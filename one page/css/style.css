@@ -29,6 +29,9 @@ a {
 .textbox {
   background-color:rgba(0,0,0,0.6);
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 h3 {
@@ -41,6 +44,9 @@ p {
   font-size: 14px;
   line-height: 1.4em;
   color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 body {
@@ -162,12 +168,6 @@ header .logo img {
   margin-bottom: 30px;
 }
 
-#mission-and-exclusive .mission p {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 #mission-and-exclusive .exclusive {
   color: #eeeeee;
 }
@@ -182,9 +182,6 @@ header .logo img {
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.4em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 /*ESSENCE  */
@@ -206,3 +203,31 @@ header .logo img {
   right: 100px;
 }
 
+#essence .textbox p {
+  
+}
+
+/* SLOGAN */
+#slogan {
+  background-image: url("../images/brand_04.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slogan > .inner {
+  height: 500px;
+}
+
+#slogan .textbox {
+  width: 450px;
+  position: absolute;
+  top: 170px;
+  left: 100px;
+}
+
+#slogan .textbox p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
