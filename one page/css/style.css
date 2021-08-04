@@ -23,6 +23,7 @@ a {
 .inner {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .textbox {
@@ -57,7 +58,6 @@ header > .inner {
   justify-content: space-around;
   align-items: center;
   padding: 12px 0;
-  position: relative;
 }
 
 header .logo {
@@ -78,10 +78,6 @@ header .logo img {
   display: flex;
 }
 
-.header__sign li {
-  
-}
-
 .header__sign li a {
   display: block;
   padding: 8px 12px;
@@ -91,9 +87,6 @@ header .logo img {
 .header__menu {
   display: flex;
   margin-top: 40px;
-}
-
-.header__menu li {
 }
 
 .header__menu li a {
@@ -135,7 +128,6 @@ header .logo img {
 
 #vision > .inner {
   height: 500px;
-  position: relative;
 }
 
 #vision .textbox {
@@ -143,10 +135,6 @@ header .logo img {
   position: absolute;
   top: 170px;
   right: 100px;
-}
-
-#vision .textbox h3 {
-  
 }
 
 /* mission-and-exclusive */
@@ -198,3 +186,23 @@ header .logo img {
   flex-direction: column;
   align-items: flex-end;
 }
+
+/*ESSENCE  */
+#essence {
+  background-image: url("../images/brand_03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#essence > .inner {
+  height: 500px;
+}
+
+#essence .textbox {
+  width: 450px;
+  position: absolute;
+  top: 170px;
+  right: 100px;
+}
+
