@@ -25,6 +25,22 @@ a {
   margin: 0 auto;
 }
 
+.textbox {
+  background-color:rgba(0,0,0,0.6);
+}
+
+h3 {
+  font-size: 45px;
+  color: #eeeeee;
+  margin: 12px 8px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: #eeeeee;
+}
+
 body {
   cursor:default;
   font-family: 'Roboto', sans-serif;
@@ -105,5 +121,30 @@ header .logo img {
   font-size: 70px;
   text-align: center;
   line-height: 500px;
-  color: #eeeeee;
+  margin:0;
+}
+
+/* VISION */
+#vision {
+  background-image: url("../images/brand_01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#vision > .inner {
+  height: 500px;
+  position: relative;
+}
+
+#vision .textbox {
+  width: 450px;
+  padding: 50px;
+  position: absolute;
+  top: 170px;
+  right: 100px;
+}
+
+#vision .textbox h3 {
+  
 }
