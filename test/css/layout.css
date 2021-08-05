@@ -26,6 +26,7 @@ h4 {
 #wrap {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .hide {
@@ -89,7 +90,6 @@ article {
   background-color: #616161;
   float: right;
   padding: 25px 20px;
-  overflow: hidden;
   margin: 10px 0;
 }
 

@@ -29,10 +29,12 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  height: 500px;
+  /* height: 500px; */
+  height: 100vh;
 }
 
 .textbox {
+  width: 450px;
   background-color:rgba(0,0,0,0.6);
   padding: 50px;
   display: flex;
@@ -72,9 +74,22 @@ small {
 }
 
 /* HEADER */
-header {
-  background-color: #e0e0e0;
-  
+#header-wrap {
+  /* height: 400px; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(224, 224, 224,0.4);
+}
+
+#header-wrap:hover {
+  height: 400px;
+}
+
+#header-wrap:hover .header__menu li .submenu {
+  display: block;
 }
 
 header > .inner {
@@ -82,7 +97,9 @@ header > .inner {
   justify-content: space-around;
   align-items: center;
   height: auto;
-  padding: 12px 0;
+  /* padding: 12px 0; */
+  padding: 30px 0;
+  /* height: 146px; */
 }
 
 .header__sign {
@@ -99,7 +116,7 @@ header > .inner {
 }
 
 .header__sign li a,
-.header__menu li a {
+.header__menu > li > a {
   color: #424242;
 }
 
@@ -108,43 +125,29 @@ header > .inner {
   margin-top: 40px;
 }
 
-.header__menu li:hover .submenu {
-  display: block;
-}
-
-.header__menu:hover {
-}
-
-.header__menu li {
+.header__menu > li {
  position: relative;
- flex-basis: 0;
+ font-size: 16px;
 }
 
-.header__menu li a {
+.header__menu > li > a {
   display: block;
-  padding: 8px 30px;
-  text-align: center;
+  padding-right: 67px;
 }
 
 .header__menu li .submenu {
-  font-size: 12px;
+  font-size: 13px;
   position: absolute;
-  top:50px;
+  /* top:50px; */
+  top: 60px;
   left: 0;
-  background-color: rgba(224, 224, 224,0.5);
   display: none;
 }
 
-.header__menu li .submenu li {
-  
-  
-}
-
 .header__menu li .submenu li a {
-  line-height: 1.4em;
+  line-height:34px;
+  color: #212121;
 }
-
-
 
 /* MAIN */
 #main {
@@ -157,8 +160,12 @@ header > .inner {
 #main .main__title {
   font-size: 70px;
   text-align: center;
-  line-height: 500px;
+  /* line-height: 500px; */
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* VISION */
@@ -170,7 +177,6 @@ header > .inner {
 }
 
 #vision .textbox {
-  width: 450px;
   position: absolute;
   top: 170px;
   right: 100px;
@@ -222,7 +228,6 @@ header > .inner {
 }
 
 #essence .textbox {
-  width: 450px;
   position: absolute;
   top: 170px;
   right: 100px;
@@ -237,7 +242,6 @@ header > .inner {
 }
 
 #slogan .textbox {
-  width: 450px;
   position: absolute;
   top: 170px;
   left: 100px;
