@@ -20,7 +20,7 @@ p {
 }
 
 h4 {
-  color :#ffc107;
+  color :#ffee58;
 }
 
 #wrap {
@@ -85,7 +85,7 @@ header nav .navbar__menu li a{
 
 /* MAIN */
 article {
-  width: 800px;
+  width: 900px;
   background-color: #616161;
   float: right;
   padding: 25px 20px;
@@ -100,7 +100,7 @@ article #sec01 {
 article #sec01 h3 {
   font-size: 25px;
   line-height: 2em;
-  color: #fb8c00;
+  color: #ffc107;
   text-align: center;
 } 
 
@@ -110,7 +110,6 @@ article #sec01 p {
 
 article #sec02 {
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 20px;
 }
@@ -156,7 +155,7 @@ aside ul li a {
 footer {
   clear: both;
   background-color: #212121;
-  color: #ffc107;;
+  color: #ffee58;
   text-align: center;
   padding: 10px;
 }
