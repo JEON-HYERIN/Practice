@@ -39,7 +39,7 @@ h4 {
 
 /* HEADER */
 header {
-  background-color: #f06292;
+  background-color: #ff77a9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,6 +90,7 @@ article {
   float: right;
   padding: 25px 20px;
   overflow: hidden;
+  margin: 10px 0;
 }
 
 article #sec01 {
