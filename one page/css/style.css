@@ -74,7 +74,7 @@ small {
 /* HEADER */
 header {
   background-color: #e0e0e0;
-  padding: 12px 0;
+  
 }
 
 header > .inner {
@@ -82,6 +82,7 @@ header > .inner {
   justify-content: space-around;
   align-items: center;
   height: auto;
+  padding: 12px 0;
 }
 
 .header__sign {
@@ -97,20 +98,53 @@ header > .inner {
   font-size: 12px;
 }
 
+.header__sign li a,
+.header__menu li a {
+  color: #424242;
+}
+
 .header__menu {
   display: flex;
   margin-top: 40px;
 }
 
-.header__menu li a {
+.header__menu li:hover .submenu {
   display: block;
-  padding: 8px 20px;
 }
 
-.header__sign li a,
-.header__menu li a {
-  color: #424242;
+.header__menu:hover {
 }
+
+.header__menu li {
+ position: relative;
+ flex-basis: 0;
+}
+
+.header__menu li a {
+  display: block;
+  padding: 8px 30px;
+  text-align: center;
+}
+
+.header__menu li .submenu {
+  font-size: 12px;
+  position: absolute;
+  top:50px;
+  left: 0;
+  background-color: rgba(224, 224, 224,0.5);
+  display: none;
+}
+
+.header__menu li .submenu li {
+  
+  
+}
+
+.header__menu li .submenu li a {
+  line-height: 1.4em;
+}
+
+
 
 /* MAIN */
 #main {
