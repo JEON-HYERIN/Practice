@@ -49,17 +49,22 @@ h1, h2, h3, h4, small {
 }
 
 section {
-  /* height: 100vh; */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* HEADER */
 header {
   background-color: rgba(224, 224, 224,0.4);
+  /* background-color: transparent; */
   /* height: 400px; */
   padding: 20px 0;
 }
 
-header:hover {
+nav .navbar__menu:hover header {
   height: 400px;
 }
 
@@ -71,6 +76,7 @@ header .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9;
 }
 
 header .inner .logo {
@@ -91,6 +97,12 @@ nav .navbar__menu li {
   position: relative;
 }
 
+nav .navbar__menu > li > a {
+  padding-right: 60px;
+  display: block;
+  font-size: 16px;
+}
+
 nav .navbar__menu .submenu {
   position: absolute;
   left: 0;
@@ -101,12 +113,6 @@ nav .navbar__menu .submenu {
 nav .navbar__menu .submenu li a {
   font-size: 14px;
   line-height: 2em;
-}
-nav .navbar__menu > li > a {
-  padding-right: 60px;
-  display: block;
-  font-size: 16px;
-  
 }
 
 nav .navbar__sign {
@@ -120,4 +126,22 @@ nav .navbar__sign li a {
   padding: 0 12px;
   display: block;
   font-size: 12px;
+}
+
+/* MAIN */
+#main {
+  background-image: url("../images/h1.jpg");
+}
+
+.main__title {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__title h3 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
 }
