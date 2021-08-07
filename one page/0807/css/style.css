@@ -28,6 +28,21 @@ h1, h2, h3, h4, small {
   line-height: 1em;
 }
 
+h4 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h4, p {
+  color: #fff;
+}
+
+
 .hide {
   width: 0;
   height: 0;
@@ -39,7 +54,8 @@ h1, h2, h3, h4, small {
 
 .textbox {
   width: 450px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
+  padding: 50px;
 }
 
 .inner {
@@ -144,4 +160,41 @@ nav .navbar__sign li a {
   font-size: 80px;
   font-weight: 700;
   color: #fff;
+}
+
+/* VISION */
+#vision {
+  background-image: url("../images/brand_01.jpg");
+}
+
+#vision .inner {
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#vision .textbox {
+  text-align: left;
+  position: absolute;
+  height: 208px;
+  top: 0;
+  bottom:0 ;
+  right: 50px;
+  margin: auto 0;
+}
+
+/* MISSION-AND-EXCLUSIVE */
+#mission-and-exclusive {
+  background-image: url("../images/brand_02.jpg");
+}
+
+/* ESSENCE */
+#essence {
+  background-image: url("../images/brand_03.jpg");
+}
+
+/* SLOGAN */
+#slogan {
+  background-image: url("../images/brand_04.jpg");
 }
