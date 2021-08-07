@@ -36,6 +36,7 @@ h4 {
 
 p {
   font-size: 14px;
+  line-height: 1.8em;
 }
 
 h4, p {
@@ -212,9 +213,24 @@ nav .navbar__sign li a {
 #mission-and-exclusive .textbox .exclusive__description {
   width: 150px;
 }
+
 /* ESSENCE */
 #essence {
   background-image: url("../images/brand_03.jpg");
+}
+
+#essence .textbox {
+  text-align: left;
+  position: absolute;
+  height: 208px;
+  top: 0;
+  bottom:0 ;
+  right: 50px;
+  margin: auto 0;
+}
+
+#essence .textbox p {
+  width: 200px;
 }
 
 /* SLOGAN */
