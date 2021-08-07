@@ -24,7 +24,7 @@ h4 {
 }
 
 #wrap {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -84,9 +84,13 @@ header nav .navbar__menu li a{
   padding: 0 20px;
 }
 
+header nav .navbar__menu li a:hover {
+  color: #656565;
+}
+
 /* MAIN */
 article {
-  width: 900px;
+  width: 850px;
   background-color: #616161;
   float: right;
   padding: 25px 20px;
