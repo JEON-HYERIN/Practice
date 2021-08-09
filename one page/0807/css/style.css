@@ -93,7 +93,7 @@ section {
   left: 0;
   width: 100%;
   background-color: rgba(224, 224, 224,0.3);
-  z-index: 9;
+  z-index: 10;
 }
 
 #header-wrap:hover {
@@ -109,7 +109,7 @@ header {
   padding: 20px 0;
 }
 
-header:hover nav .navbar__menu .submenu {
+#header-wrap:hover nav .navbar__menu .submenu {
   display: block;
 }
 
@@ -270,6 +270,7 @@ aside {
   /* width: 100%; */
   margin: auto 0;
   height: 330px;
+  z-index: 100;
 }
 
 aside > ul > li {
