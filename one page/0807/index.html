@@ -5,10 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WALKERHILL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!-- HEADER -->
+  <div id="header-wrap">
   <header>
     <div class="inner">
       <div class="logo">
@@ -19,15 +23,12 @@
         <h2 class="hide">메인네비게이션</h2>
         <ul class="navbar__menu">
           <li><a href="#">WELCOME</a>
-            <div class="inner">
               <ul class="submenu">
                 <li><a href="#">고객센터</a></li>
                 <li><a href="#">오시는길</a></li>
               </ul>
-            </div>
           </li>
           <li><a href="#">ROOMS</a>
-            <div class="inner">
               <ul class="submenu">
                 <li><a href="#">객실 종합안내</a></li>
                 <li><a href="#">딜럭스</a></li>
@@ -36,10 +37,8 @@
                 <li><a href="#">로얄 스위트</a></li>
                 <li><a href="#">애스톤 하우스</a></li>
               </ul>
-            </div>
           </li>
           <li><a href="#">DINING</a>
-            <div class="inner">
               <ul class="submenu">
                 <li><a href="#">다이닝 종합안내</a></li>
                 <li><a href="#">온달</a></li>
@@ -48,31 +47,24 @@
                 <li><a href="#">더파빌리온</a></li>
                 <li><a href="#">더델리</a></li>
               </ul>
-            </div>
           </li>
           <li><a href="#">MEMBERSHIP</a>
-            <div class="inner">
               <ul class="submenu">
                 <li><a href="#">REWARDS</a></li>
                 <li><a href="#">PRESTIGE CLUB</a></li>
               </ul>
-            </div>
           </li>
           <li><a href="#">FACILITIES</a>
-            <div class="inner">
               <ul class="submenu">
                 <li><a href="#">CONVENIENCES</a></li>
                 <li><a href="#">ACTIVITIES</a></li>
               </ul>
-            </div>
           </li>
           <li><a href="#">OFFERS</a>
-            <div class="inner">
               <ul class="submenu">
                 <li><a href="#">DINING & EVENT</a></li>
                 <li><a href="#">ROOM OFFER</a></li>
               </ul>
-            </div>
           </li>
         </ul>
         <ul class="navbar__sign">
@@ -84,7 +76,7 @@
       </nav>
     </div>
   </header>
-
+</div>
   <!-- MAIN -->
   <section id="main">
     <div class="inner">
@@ -145,12 +137,24 @@
     </div>
   </section>
 
+  <!-- ASIDE -->
+  <aside>
+    <ul>
+      <li><a href="./#main">main</a></li>
+      <li><a href="./#vision">vision</a></li>
+      <li><a href="./#mission-and-exclusive">mission-and-exclusive</a></li>
+      <li><a href="./#essence">essence</a></li>
+      <li><a href="./#slogan">slogan</a></li>
+    </ul>
+  </aside>
+
   <!-- FOOTER -->
   <footer>
     <div class="inner">
       <div class="footer__top">
         <div class="logo">
           <h1><a href="/"><img src="./images/logo.png" alt="logo"></a></h1>
+          </div>
           <ul class="about">
             <li><a href="#">개인 정보처리방침</a></li>
             <li><a href="#">이용약관</a></li>
@@ -160,7 +164,6 @@
             <li><a href="#">사이트맵</a></li>
             <li><a href="#">윤리경영</a></li>
           </ul>
-        </div>
       </div>
       <div class="footer__bottom">
         <address>04963) 서울특별시 광진구 워커힐로 177 (광장동)</address>
@@ -183,6 +186,11 @@
         <p class="rights">
           <small>&copy; COPYRIGHT 2017 SK NETWORKS CO., LTD WALKERHILL ALL RIGHTS RESERVED.</small>
         </p>
+        <ul class="links">
+          <li><a href="#"><img src="./images/sns_03.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="./images/sns_01.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="./images/sns_02.png" alt="twitter"></a></li>
+        </ul>
       </div>
     </div>
   </footer>
