@@ -236,10 +236,6 @@ nav .navbar__sign li a {
   margin: auto 0;
 }
 
-#essence .textbox p {
-  width: 200px;
-}
-
 /* SLOGAN */
 #slogan {
   background-image: url("../images/brand_04.jpg");
@@ -303,6 +299,7 @@ footer {
 footer .footer__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -320,7 +317,7 @@ footer .footer__top .about li::after {
   display: block;
   width: 1px;
   height: 15px;
-  background-color: #bdbdbd;
+  background-color: #707070;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -358,7 +355,7 @@ footer .footer__bottom .rights {
   bottom: 0;
   left: 0;
   /* color: #bdbdbd; */
-  color: #efefef;
+  color: #707070;
   font-size: 11px;
   letter-spacing: 0.1em;
 }
