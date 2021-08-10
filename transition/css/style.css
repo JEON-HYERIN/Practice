@@ -49,6 +49,7 @@ ul li a {
   background-repeat: no-repeat;
   background-position: right top;
   border-radius: 0 32px 32px 0;
+  transition: width .5s;
 }
 
 ul li a:hover {
@@ -57,7 +58,7 @@ ul li a:hover {
   background-color: #f9a825;
   transform: scale(1.1);
   box-shadow: 5px 4px 6px 1px rgba(74,74,74,0.78);
-  transition: .5s ease-in-out;
+  /* transition: .5s ease-in-out; */
   z-index: 1;
 }
 
