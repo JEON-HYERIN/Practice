@@ -1,0 +1,95 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #cfd8dc;
+}
+
+a {
+  text-decoration: none;
+  color: #616161;
+}
+
+.hide {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+/* NAV */
+ul {
+  background-color: #e0e0e0;
+  width: 250px;
+  margin: 50px auto;
+  padding: 8px 0;
+}
+
+ul li {
+  position: relative;
+  height: 64px;
+}
+
+ul li a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: block;
+  line-height: 64px;
+  /* font-weight: 700; */
+  font-size: 18px;
+  text-indent: 30px;
+  background-image: url("../img/icons.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  border-radius: 0 32px 32px 0;
+}
+
+ul li a:hover {
+  color: #f4f4f4;
+  width: 300px;
+  background-color: #f9a825;
+  transform: scale(1.1);
+  box-shadow: 5px 4px 6px 1px rgba(74,74,74,0.78);
+  transition: .5s ease-in-out;
+  z-index: 1;
+}
+
+ul li:nth-child(2) a{
+  background-position: right -64px;
+} 
+
+ul li:nth-child(2) a:hover {
+  background-color: #ff5252;
+}
+
+ul li:nth-child(3) a{
+  background-position: right calc(-64px * 2);
+} 
+
+ul li:nth-child(3) a:hover {
+  background-color: #3949ab;
+}
+
+
+ul li:nth-child(4) a{
+  background-position: right calc(-64px * 3);
+} 
+
+ul li:nth-child(4) a:hover {
+  background-color: #e64a19;
+}
+
+ul li:nth-child(5) a{
+  background-position: right calc(-64px * 4);
+} 
+
+ul li:nth-child(5) a:hover {
+  background-color: #512da8;
+}
